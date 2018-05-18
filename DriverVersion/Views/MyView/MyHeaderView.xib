@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXi-ng-jt5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Lt-OF-K9E">
+                            <rect key="frame" x="27" y="19" width="67" height="63"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="gPx-Kz-QFh"/>
+                                <constraint firstAttribute="width" constant="67" id="ghV-14-j2y"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnY-VE-RRv">
+                            <rect key="frame" x="111" y="40" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VnY-VE-RRv" firstAttribute="leading" secondItem="0Lt-OF-K9E" secondAttribute="trailing" constant="17" id="GVg-1A-qjf"/>
+                        <constraint firstAttribute="bottom" secondItem="0Lt-OF-K9E" secondAttribute="bottom" constant="18" id="JkE-aM-h8L"/>
+                        <constraint firstItem="VnY-VE-RRv" firstAttribute="centerY" secondItem="0Lt-OF-K9E" secondAttribute="centerY" id="dOz-OD-Kxe"/>
+                        <constraint firstItem="0Lt-OF-K9E" firstAttribute="leading" secondItem="KXi-ng-jt5" secondAttribute="leading" constant="27" id="mE7-HS-6Et"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KXi-ng-jt5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0iO-09-1MX"/>
+                <constraint firstAttribute="bottom" secondItem="KXi-ng-jt5" secondAttribute="bottom" id="Col-nD-yNK"/>
+                <constraint firstAttribute="trailing" secondItem="KXi-ng-jt5" secondAttribute="trailing" id="El2-rF-XF5"/>
+                <constraint firstItem="KXi-ng-jt5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rdw-lK-Xgm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgView" destination="KXi-ng-jt5" id="rc2-Cj-cDn"/>
+                <outlet property="imgV" destination="0Lt-OF-K9E" id="lB2-2U-Lwq"/>
+                <outlet property="nameLabel" destination="VnY-VE-RRv" id="RSk-QZ-QXG"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="107"/>
+        </view>
+    </objects>
+</document>

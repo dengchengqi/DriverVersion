@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InfoImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="am4-5S-N2B">
+                        <rect key="frame" x="16" y="16" width="31" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UcV-9U-wl7">
+                        <rect key="frame" x="252" y="5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="2Uv-Wg-ErF"/>
+                            <constraint firstAttribute="height" constant="40" id="hz3-8Q-lmJ"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youbianjiantou" translatesAutoresizingMaskIntoConstraints="NO" id="GQ8-nI-XSX">
+                        <rect key="frame" x="296" y="18.5" width="8" height="13"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLs-mp-uK9">
+                        <rect key="frame" x="0.0" y="49" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="uIL-oh-v9O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UcV-9U-wl7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="405-5L-hiY"/>
+                    <constraint firstAttribute="bottom" secondItem="SLs-mp-uK9" secondAttribute="bottom" id="Cqr-Sg-SQh"/>
+                    <constraint firstItem="GQ8-nI-XSX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EW8-c5-8rw"/>
+                    <constraint firstItem="am4-5S-N2B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="P8H-qF-lqV"/>
+                    <constraint firstItem="am4-5S-N2B" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="W0T-6y-tXB"/>
+                    <constraint firstAttribute="trailing" secondItem="SLs-mp-uK9" secondAttribute="trailing" id="brR-Lv-7bU"/>
+                    <constraint firstAttribute="trailing" secondItem="GQ8-nI-XSX" secondAttribute="trailing" constant="16" id="dZb-6N-FsG"/>
+                    <constraint firstItem="SLs-mp-uK9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eMc-6L-Cil"/>
+                    <constraint firstItem="GQ8-nI-XSX" firstAttribute="leading" secondItem="UcV-9U-wl7" secondAttribute="trailing" constant="4" id="ep5-fw-OJx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgV" destination="UcV-9U-wl7" id="lkg-ie-Ini"/>
+                <outlet property="lineV" destination="SLs-mp-uK9" id="zIy-E5-YCc"/>
+                <outlet property="portraitLabel" destination="am4-5S-N2B" id="dfe-qu-9sH"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="youbianjiantou" width="8" height="13"/>
+    </resources>
+</document>

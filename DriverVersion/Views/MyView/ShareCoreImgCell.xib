@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="263" id="KGk-i7-Jjw" customClass="ShareCoreImgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NPs-2W-1tR">
+                        <rect key="frame" x="73" y="10" width="175" height="175"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="175" id="6jr-lf-4vj"/>
+                            <constraint firstAttribute="width" constant="175" id="Tof-Q2-WQn"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPw-xg-NM1">
+                        <rect key="frame" x="70" y="203" width="180" height="40"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.54509803921568623" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="f42-y1-gK5"/>
+                            <constraint firstAttribute="width" constant="180" id="ssu-0D-wn4"/>
+                        </constraints>
+                        <state key="normal" title="保存到相册">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="saveButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="c9I-Rz-b5r"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="NPs-2W-1tR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="b5B-87-KH1"/>
+                    <constraint firstItem="NPs-2W-1tR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nRN-8f-JtE"/>
+                    <constraint firstItem="oPw-xg-NM1" firstAttribute="top" secondItem="NPs-2W-1tR" secondAttribute="bottom" constant="18" id="nth-gl-ocD"/>
+                    <constraint firstItem="oPw-xg-NM1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="v61-bG-lC8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coreImgV" destination="NPs-2W-1tR" id="HLd-54-4GR"/>
+                <outlet property="saveBtn" destination="oPw-xg-NM1" id="WAI-eW-yHL"/>
+            </connections>
+            <point key="canvasLocation" x="35.5" y="233.5"/>
+        </tableViewCell>
+    </objects>
+</document>
